@@ -1,0 +1,15 @@
+{% extends 'polls/base.html'%}
+<!--- ke thua file base.html dua doan ma html o duoi vao block content --->
+{%block content%}
+   <h1> Day la template</h1>
+   <p>Hello minh la <b>{{name}}</b></p>
+    <h2>Tai san cua toi gom: </h2>
+    <ul>
+        {%for item in tai_san%}
+            {%if item != 'laptop'%}
+                <li>{{item}}</li>
+            {%endif%}
+        {%endfor%}
+
+    </ul>
+{%endblock%}

@@ -1,0 +1,32 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EShopper - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+
+{% block cssblock %}
+ {% endblock%}
+
+</head>
+
+<body>
+
+{% include 'homepage/navbar.html' %}
+{% block content %}
+
+{% endblock %}
+{% include 'homepage/footer.html' %}
+{% block jsblock %}
+
+{% endblock %}
+</body>
+</html>

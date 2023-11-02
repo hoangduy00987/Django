@@ -1,0 +1,13 @@
+{% extends 'polls/base.html'%}
+<!--- ke thua file base.html dua doan ma html o duoi vao block content --->
+ {%block content%}
+    {% if dsquest %}
+        {% for item in dsquest %}
+           <a href="{%url 'polls:detail' item.id %}"><p>{{item.question_text}}</p></a>
+            {%endfor%}
+    {%else%}
+        <h3 style="color:red;">Khong co du lieu cau hoi nao</h3>
+    {%endif%}
+    {%endblock%}
+
+
